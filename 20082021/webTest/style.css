@@ -1,0 +1,42 @@
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  text-align: center;
+  margin-top: 150px;
+}
+
+input
+{
+  /*REMOVENDO PRADRÃO DO INPUT*/
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  /*REMOVENDO PRADRÃO DO INPUT*/
+  border-radius: 4px;
+  text-align: center;
+  width: 100px;
+}
+
+input:focus
+{
+  border-style: groove;
+  border-color: rgb(49, 113, 173);
+}
+
+button
+{
+  /*REMOVENDO PRADRÃO DO INPUT*/
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  /*REMOVENDO PRADRÃO DO INPUT*/
+  text-align: center;
+  border-radius: 4px;
+}
+
+button:hover
+{
+  border-style: groove;
+  border-color: rgb(49, 113, 173);
+}
