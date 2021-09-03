@@ -1,14 +1,14 @@
 # Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou negativo.
 # A função deve retornar um valor booleano.
 
-def isPositive(i):
-    if (i > 0):
+def isPositivo(numero):
+    if (numero > 0):
         return True
     return False
 
 while True:
-    number = int(input("Insert a integer number:"))
-    if isPositive(number) is True:
-        print ("Positive Number")
+    numero = int(input("Insira um numero inteiro:"))
+    if isPositivo(numero) is True:
+        print ("Numero Positivo")
     else:
-        print ("Negative Number")
+        print ("Numero Negativo")

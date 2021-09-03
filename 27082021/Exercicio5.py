@@ -1,14 +1,14 @@
 # Faça uma função que recebe um valor inteiro e verifica se o valor é par ou ímpar.
 # A função deve retornar um valor booleano.
 
-def isEven(i):
-    if (i % 2) == 0:
+def isPar(numero):
+    if (numero % 2) == 0:
         return True
     return False
 
 while True:
-    number = int(input("Insert a integer number:"))
-    if isEven(number) is True:
-        print ("Peer Number")
+    numero = int(input("Insira um numero inteiro:"))
+    if isPar(numero) is True:
+        print ("Numero Par")
     else:
-        print ("Odd Number")
+        print ("Numero Impar")
