@@ -15,9 +15,46 @@ A saída deverá ser:
 + O número de votos nulos
 + o número de eleitores
 
-Entrega até 16/09/2020 às 23h59
-Formato: seu_nome.py ou seu_nome.ipynb
-Valor 1 ponto
-
 '''
+def getPrefeitoByVotos(n1, n2, n3):
+    if n1 > n2 and n1 > n3:
+        return "Samuca" #n1
+    elif n2 > n3:
+        return "Neto" #n2
+    else:
+        return "Baltazar" #n3
 
+votosBranco   = 0
+votosSamuca   = 0
+votosNeto     = 0
+votosBaltazar = 0
+votosNulo     = 0
+voto          = 0
+eleitores     = 0
+
+while True:
+    voto = int(input("Insira o numero do candidato: "))
+
+    if voto == -1:
+        break
+    
+    eleitores += 1
+
+    if voto == 0: #Branco
+        votosBranco += 1
+    elif voto == 1: #Samuca
+        votosSamuca += 1
+    elif voto == 2: #Neto
+        votosNeto += 1
+    elif voto == 3: #Baltazar
+        votosBaltazar += 1
+    elif voto >= 4: #Nulo
+        votosNulo += 1
+    else:
+        print("Invalido, insira novamente")
+        eleitores -= 1
+
+print("-------Resultado-------\nMais votado:", getPrefeitoByVotos(votosSamuca, votosBaltazar, votosNeto),
+"\nVotos em branco:", votosBranco,
+"\nVotos nulos:", votosNulo,
+"\nTotal de eleitores:",eleitores)
