@@ -1,3 +1,9 @@
+'''
+Construa um algoritmo capaz de permitir a entrada, via teclado, do nome
+do aluno e suas duas notas até que o nome sair aparecer e terminar o
+programa. No final deverá apresentar o nome e a média das notas junto com
+mensagem aprovado (>=7) ou reprovado (<7).
+'''
 nomeAluno = input(print("Insira o nome do aluno:"))
 notasAluno = []
 i = 1
