@@ -14,7 +14,7 @@ class Produto():
         self.preco = preco
         
 def isSair(text):
-    if text == "Sair" or text == "sair":
+    if text.upper() == "SAIR":
         return True
     return False
 
