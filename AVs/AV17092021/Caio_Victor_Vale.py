@@ -41,4 +41,4 @@ while True:
 for produto in produtos:
     faturamento += (produto.quantidade * produto.preco)
 
-print("=======Faturamento=======\nFaturmanto: R$", faturamento)
+print(f"=======Faturamento=======\nFaturmanto: R$ {faturamento:.2f}")
